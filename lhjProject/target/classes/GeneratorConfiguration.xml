@@ -29,23 +29,23 @@
     </javaTypeResolver>
     
     <!-- 数据表对应的model 层  -->
-    <javaModelGenerator targetPackage="main.java.com.lhj.project.model" targetProject="src">
+    <javaModelGenerator targetPackage="com.lhj.project.model" targetProject="src">
       <property name="enableSubPackages" value="true" />
       <property name="trimStrings" value="true" />
     </javaModelGenerator>
     
     <!-- sql mapper 映射配置文件 -->
-    <sqlMapGenerator targetPackage="main.java.com.lhj.project.dao"  targetProject="src">
+    <sqlMapGenerator targetPackage="com.lhj.project.dao"  targetProject="src">
       <property name="enableSubPackages" value="true" />
     </sqlMapGenerator>
     
     <!-- 在ibatis2 中是dao层，但在mybatis3中，其实就是mapper接口 -->
-    <javaClientGenerator type="XMLMAPPER" targetPackage="main.java.com.lhj.project.dao"  targetProject="src">
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.lhj.project.dao"  targetProject="src">
       <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
     
     <!-- 要对那些数据表进行生成操作，必须要有一个. -->
-    <table schema="myproject" tableName="dashboard" domainObjectName="DashData"
+    <table schema="myproject" tableName="notify_log" domainObjectName="NotifyLog"
         enableCountByExample="false" enableUpdateByExample="false"
         enableDeleteByExample="false" enableSelectByExample="false"
         selectByExampleQueryId="false">     

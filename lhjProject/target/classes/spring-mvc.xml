@@ -20,9 +20,7 @@
 
 
     <bean id="userController" class="com.lhj.project.controller.UserController"/>
-
-
-
+    <bean id="lePayController" class="com.lhj.project.controller.LePayController"/>
 
     <!-- 静态资源默认servlet配置 -->
     <mvc:default-servlet-handler/>

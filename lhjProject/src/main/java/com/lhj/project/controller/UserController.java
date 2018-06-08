@@ -34,7 +34,7 @@ public class UserController {
     }
 
 
-    @Scheduled(cron = "0/5 * * * * ?")
+    //@Scheduled(cron = "0/5 * * * * ?")
     public void doCheck() {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh-ss-mm");
         Calendar c = Calendar.getInstance();

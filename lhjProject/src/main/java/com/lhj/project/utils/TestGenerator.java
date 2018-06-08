@@ -14,7 +14,9 @@ import org.mybatis.generator.exception.InvalidConfigurationException;
 import org.mybatis.generator.exception.XMLParserException;
 import org.mybatis.generator.internal.DefaultShellCallback;
 
-
+/**
+ * 用于代码生成
+ */
 public class TestGenerator {
 	public static void main(String[] args) {
 		List<String> warnings = new ArrayList<String>();
